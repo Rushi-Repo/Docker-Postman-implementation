@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Living Space (sq. ft.)</th>
+        <th scope="col">Beds</th>
+        <th scope="col">Baths</th>
+        <th scope="col">Zip Code</th>
+        <th scope="col">Year</th>
+        <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for house in houses %}
+    <tr>
+        <td><a href="view/{{house.id}}">{{ house.fldName }}</a></td>
+        <td>{{ house.fldLiveSpace }}</td>
+        <td>{{ house.fldBeds }}</td>
+        <td>{{ house.fldBaths }}</td>
+        <td>{{ house.fldZip }}</td>
+        <td>{{ house.fldYear }}</td>
+        <td>{{ house.fldPrice }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">{{ house.fldName }}</h5>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ house.fldLiveSpace }}</li>
+        <li class="list-group-item">{{ house.fldBeds }}</li>
+        <li class="list-group-item">{{ house.fldBaths }}</li>
+        <li class="list-group-item">{{ house.fldZip }}</li>
+        <li class="list-group-item">{{ house.fldYear }}</li>
+        <li class="list-group-item">{{ house.fldPrice }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{house.id}}" class="card-link btn btn-primary">Edit</a>
+    </div>
+</div>
+<form action="/delete/{{house.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
+
+
+{% endblock %}

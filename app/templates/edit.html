@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{house.id}}" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="fldName">Name</label>
+            <input id="fldName" type="text" class="form-control" placeholder="Name" name="fldName" value="{{house.fldName}}">
+        </div>
+        <div class="col">
+            <label for="fldLiveSpace">Living Space (sq. ft.)</label>
+            <input id="fldLiveSpace" type="text" class="form-control" placeholder="Living Space (sq. ft.)"
+                   name="fldLiveSpace" value="{{house.fldLiveSpace}}">
+        </div>
+        <div class="col">
+            <label for="fldBeds">Beds</label>
+            <input id="fldBeds" type="text" class="form-control" placeholder="Beds" name="fldBeds" value="{{house.fldBeds}}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="fldBaths">Baths</label>
+            <input id="fldBaths" type="text" class="form-control" placeholder="Baths" name="fldBaths" value="{{house.fldBaths}}">
+        </div>
+        <div class="col">
+            <label for="fldZip">Zip Code</label>
+            <input id="fldZip" type="text" class="form-control" placeholder="Zip Code" name="fldZip" value="{{house.fldZip}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="fldYear">Year</label>
+
+            <input id="fldYear" type="text" class="form-control" placeholder="Year"
+                   name="fldYear" value="{{house.fldYear}}">
+        </div>
+        <div class="col">
+            <label for="fldPrice">Price</label>
+            <input id="fldPrice" type="text" class="form-control" placeholder="Price" name="fldPrice" value="{{house.fldPrice}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
