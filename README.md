@@ -1,7 +1,7 @@
-# Python Docker Flask on Pycharm
+# Project description
 
-## Screenshots
+## PROJECT 3
 
-<img src="https://github.com/Rushi-Repo/WSD_Project3/blob/main/screenshots/postman.png?raw=true" />
+### This project is set to have Docker Compose setup a python flask app and a MySQL server that loads data from db/init.sql file. 
 
-<img src="https://github.com/Rushi-Repo/WSD_Project3/blob/main/screenshots/query.png?raw=true" />
+### This project is created using REST API and use Postman to test the GET, POST, PUT and DELETE request methods. 
